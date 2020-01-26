@@ -1,0 +1,7 @@
+cmd:
+
+   git init
+
+usage:
+
+   Create a new local repository
