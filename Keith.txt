@@ -1,0 +1,31 @@
+Algorithm Keith (n) // input number
+{
+     n1 := n;
+     s := toString(n);
+     d:=s.length();
+     arr[]=:new int[n];
+     i, sum; 
+     fori:=d-1 to 0 step -1 do
+     {
+         arr[i]:=n1 % 10;
+         n1:=n1/10;
+          
+     }
+      
+     i:=d; sum:=0;
+     while sum<n then
+     {
+         sum := 0;
+         for j:=1 to d step +1 do
+         {
+             sum:=sum+arr[i-j];
+         }
+         arr[i]:=sum;
+         i:=i+1;
+     }
+ 
+    ifsum==n then
+        write "Keith Number";
+     else
+        write "Not a Keith Number";
+}
